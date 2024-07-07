@@ -1,0 +1,6 @@
+import additionGenerator
+import subtractionGenerator
+
+additionGenerator.additionGenerator()
+subtractionGenerator.subtractionGenerator("Subtraction")
+subtractionGenerator.subtractionGenerator("Subtraction1")
