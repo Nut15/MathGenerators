@@ -1,18 +1,18 @@
-Project Title
-Math Generators
+Project Title\n
+Math Generators\n
 
-Description
-Math worksheets generators for addition and subtraction. Limited to 64 questions. 
-Answers to subtraction questions and components to addition questions are single digit numbers 2 and above.
+Description\n
+Math worksheets generators for addition and subtraction. Limited to 64 questions. \n
+Answers to subtraction questions and components to addition questions are single digit numbers 2 and above.\n
 
-Getting Started
-os version: Windows 10 and above
-Python 3.11.9 (April 2, 2024)
-Should work with other versions too
+Getting Started\n
+os version: Windows 10 and above\n
+Python 3.11.9 (April 2, 2024)\n
+Should work with other versions too\n
 
-Authors
-Nut15
+Author\n
+Nut15\n
 
-Version History
-0.1 7/07/2024
-Initial Release
+Version History\n
+0.1 7/07/2024\n
+Initial Release\n
