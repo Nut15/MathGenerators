@@ -25,7 +25,7 @@ python3 main.py
 
 or
 
-Click "run python file" in VSCode
+Click "run python file" in main.py in VSCode
 
 ## Author
 Nut15
