@@ -13,14 +13,18 @@ Python 3.11.9 (April 2, 2024) - Should work with earlier/later versions too
 ### Downloading
 Downloading [python](https://www.python.org/downloads/)
 
-Downloading [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html#install)
+Downloading [pip](https://pip.pypa.io/en/stable/installation/)
 
-```bash
-pip install python-docx
-```
+Downloading [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html#install)
 
 ### Running Instructions
 Run in terminal
+
+```bash
+python main.py
+```
+
+If python not found, try the following:
 
 ```bash
 python3 main.py
