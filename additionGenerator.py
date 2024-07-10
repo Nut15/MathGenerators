@@ -1,17 +1,22 @@
 from docx import Document
 from docx.shared import Cm
+from docx.enum.text import WD_BREAK
 import random
 
-def additionGenerator():
+def additionGenerator(page_break, start, length = 1):
     
     addition_printing = Document("addition_printing.docx")
     
-    try:
-        table = addition_printing.tables[0]
-        table._element.getparent().remove(table._element)
-    except:
-        addition_printing.paragraphs[0].add_run("date:                               time:                               ___/64")
-        pass
+    if start:
+            try:
+                for para in addition_printing.paragraphs:
+                    para._element.getparent().remove(para._element)
+                for i in range(0, length):
+                    table = addition_printing.tables[0]
+                    table._element.getparent().remove(table._element)
+            except:
+                pass
+    addition_printing.add_paragraph().add_run("date:                               time:                               ___/64")
     
     table = addition_printing.add_table(rows=1, cols=4)
     table.autofit = True
@@ -39,6 +44,8 @@ def additionGenerator():
                 cell = table.cell(int(i/4)+1, int(i%4))
                 cell.width = Cm(29.7/4)
                 cell.text = str(first_num) + "+" + str(second_num) + "="
-
     
+    if page_break:
+        addition_printing.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+
     addition_printing.save("addition_printing.docx")

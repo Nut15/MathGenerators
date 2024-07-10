@@ -3,8 +3,6 @@ from docx.shared import Cm
 from docx.enum.text import WD_BREAK
 import random
 
-#instead of deleting everything and inputting them in again, why not replace????
-
 def subtractionGenerator(page_break, start, length = 1):
     
     subtraction_printing = Document("subtraction_printing.docx")
