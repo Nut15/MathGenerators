@@ -8,7 +8,24 @@ os version: Windows 10 and above
 
 Python 3.11.9 (April 2, 2024)
 
+Downloading python3
+
+```bash
+pip install python3
+```
+
 Should work with other versions too
+
+### Running Instructions
+Run in terminal.
+
+```bash
+python3 main.py
+```
+
+or
+
+Click "run python file" in VSCode (Ctrl + F7)
 
 ## Author
 Nut15
