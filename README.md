@@ -15,7 +15,15 @@ Downloading [python](https://www.python.org/downloads/)
 
 Downloading [pip](https://pip.pypa.io/en/stable/installation/)
 
+```bash
+py -m ensurepip --upgrade
+```
+
 Downloading [python-docx](https://python-docx.readthedocs.io/en/latest/user/install.html#install)
+
+```bash
+pip install python-docx
+```
 
 ### Running Instructions
 Run in terminal
