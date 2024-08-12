@@ -42,6 +42,19 @@ or
 
 Click "run python file" in main.py in VSCode
 
+## Example
+```python
+import mathGenerators
+
+#this modifies 2 seperate documents
+mathGenerators.additionGenerator50(False, True)
+mathGenerators.subtractionGenerator50(False, True)
+
+#this modifies a single document
+mathGenerators.subtractionGenerator20(True, True, 2)
+mathGenerators.subtractionGenerator20(False, False)
+```
+
 ## Author
 Nut15
 
@@ -55,3 +68,13 @@ Initial Release
 Improved generators
 
 Write inside .docx instead of .txt
+
+0.3 - 12/08
+
+Placed all generators in mathGenerators, a single module
+
+moved all .docx files to be changed to a single folder - printing documents
+
+completed descriptions for functions and modules
+
+added Example secion in README

@@ -1,6 +1,4 @@
-import additionGenerator
-import subtractionGenerator
+import mathGenerators
 
-additionGenerator.additionGenerator(page_break=False, start=True)
-subtractionGenerator.subtractionGenerator(page_break=True, start=True, length=2)
-subtractionGenerator.subtractionGenerator(page_break=False, start=False)
+mathGenerators.additionGenerator50(False, True)
+mathGenerators.subtractionGenerator50(False, True)

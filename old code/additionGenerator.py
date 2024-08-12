@@ -2,10 +2,13 @@ from docx import Document
 from docx.shared import Cm
 from docx.enum.text import WD_BREAK
 import random
+import sys
 
 def additionGenerator(page_break, start, length = 1):
-    
-    addition_printing = Document("addition_printing.docx")
+
+    path = sys.path[0].replace("old code","printing documents")
+
+    addition_printing = Document(path + "\\additionIn20.docx")
     
     if start:
             try:
@@ -48,4 +51,4 @@ def additionGenerator(page_break, start, length = 1):
     if page_break:
         addition_printing.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
-    addition_printing.save("addition_printing.docx")
+    addition_printing.save(path + "\\additionIn20.docx")
