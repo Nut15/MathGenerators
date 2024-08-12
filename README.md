@@ -44,6 +44,8 @@ Click "run python file" in main.py in VSCode
 
 ## Example
 ```python
+#main.py
+
 import mathGenerators
 
 #this modifies 2 seperate documents
@@ -73,8 +75,8 @@ Write inside .docx instead of .txt
 
 Placed all generators in mathGenerators, a single module
 
-moved all .docx files to be changed to a single folder - printing documents
+Moved all .docx files to be changed to a single folder - printing documents
 
-completed descriptions for functions and modules
+Completed descriptions for functions and modules
 
-added Example secion in README
+Added Example secion in README
