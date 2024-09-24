@@ -6,7 +6,7 @@ Answers to subtraction questions and components to addition questions are single
 ## Getting Started
 
 ### Prerequisites
-os version: Windows 10 and above
+OS version: Windows 10 and above
 
 Python 3.11.9 (April 2, 2024) - Should work with earlier/later versions too
 
@@ -80,3 +80,7 @@ Moved all .docx files to be changed to a single folder - printing documents
 Completed descriptions for functions and modules
 
 Added Example secion in README
+
+0.3.1 - 24/09
+
+Enlargened paragraph spacing between each question

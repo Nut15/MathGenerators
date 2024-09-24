@@ -11,6 +11,7 @@ Call seprate functions for seperate pages.
 
 from docx import Document
 from docx.shared import Cm
+from docx.shared import Pt
 from docx.enum.text import WD_BREAK
 import random
 import sys
@@ -58,6 +59,8 @@ def additionGenerator20(page_break: bool, start: bool, length = 1):
                 if i%4 == 0:
                     table.add_row()
                 cell = table.cell(int(i/4)+1, int(i%4))
+                cell_format = cell.paragraphs[0].style.paragraph_format
+                cell_format.line_spacing = Pt(29)                
                 cell.width = Cm(29.7/4)
                 cell.text = str(first_num) + "+" + str(second_num) + "="
     
@@ -113,6 +116,8 @@ def subtractionGenerator20(page_break: bool, start: bool, length = 1):
                 if i%4 == 0:
                     table.add_row()
                 cell = table.cell(int(i/4)+1, int(i%4))
+                cell_format = cell.paragraphs[0].style.paragraph_format
+                cell_format.line_spacing = Pt(29)                
                 cell.width = Cm(29.7/4)
                 cell.text = str(first_num) + "-" + str(second_num) + "="
         
@@ -171,6 +176,8 @@ def additionGenerator50(page_break: bool, start: bool, length = 1):
                 if i%4 == 0:
                     table.add_row()
                 cell = table.cell(int(i/4)+1, int(i%4))
+                cell_format = cell.paragraphs[0].style.paragraph_format
+                cell_format.line_spacing = Pt(29)
                 cell.width = Cm(29.7/4)
                 cell.text = str(first_num) + "+" + str(second_num) + "="
         
@@ -230,6 +237,8 @@ def subtractionGenerator50(page_break: bool, start: bool, length = 1):
                 if i%4 == 0:
                     table.add_row()
                 cell = table.cell(int(i/4)+1, int(i%4))
+                cell_format = cell.paragraphs[0].style.paragraph_format
+                cell_format.line_spacing = Pt(29)
                 cell.width = Cm(29.7/4)
                 cell.text = str(first_num) + "-" + str(second_num) + "="
         
